@@ -19,8 +19,13 @@ const App: React.FC = () => {
 
   const initializeGameStates = (data: TimelineEvent[]) => {
     const initialStates: Record<string, boolean[]> = {};
-    data.forEach(event => {
-      initialStates[event.period] = [false, false, false, false];
+    data.forEach((event, index) => {
+      // Mở khóa mốc đầu tiên theo mặc định
+      if (index === 0) {
+        initialStates[event.period] = [true, true, true, true];
+      } else {
+        initialStates[event.period] = [false, false, false, false];
+      }
     });
     setUnlockedStates(initialStates);
   };
