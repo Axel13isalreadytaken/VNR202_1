@@ -243,7 +243,7 @@ export const TIMELINE_DATA: TimelineEvent[] = [
     imageUrl:
       "https://mediabcb.mediatech.vn/upload/image/202101/medium/2637_hcm.jpg?q=80&w=1200&auto=format&fit=crop",
     quiz: [
-      { question: "http://localhost:3000/challenge.html , hint: https://cyberjutsu.io/blog/khai-thac-sql-injection", flagAnswer: " VNR{nha_nuoc_phap_quyen_xhcn}" }, //flag từ sqli: 
+      { question: "http://localhost:3000/challenge.html , hint: https://cyberjutsu.io/blog/khai-thac-sql-injection", flagAnswer: " VNR{nha_nuoc_phap_quyen_xhcn}" }, //nhớ cập nhật link cho challenge.
     ]
   }
 ];
